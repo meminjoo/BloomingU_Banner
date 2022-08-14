@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+body{
+    overflow: hidden;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url(../image/austin-prock-MuadWRKE86Y-unsplash.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    background-color: #161616;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    opacity: 0.15;
+    position: absolute;
+    z-index: 1;
+}
+.box-icon{
+    width: 70px;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    padding: 105px 0px 50px 75px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    animation: fadeInDown 2s linear forwards;
+}
+#return{
+	position: absolute;
+	z-index: 1000;
+}
+#return:active + .wrapper .h3,
+#return:active + .wrapper .h1,
+#return:active + .wrapper .h2,
+#return:active + .wrapper .box-icon
+{
+	animation-name: none;
+}
+.icon1{
+    width: 70px;
+    height: 70px;
+    background: url(../image/icon-02.png) no-repeat center;
+    background-size: contain;
+}
+.icon1:hover{
+    transform: scale(1.2);
+}
+.icon2{
+    width: 70px;
+    height: 70px;
+    background: url(../image/icon-03.png) no-repeat center;
+    background-size: contain;
+    margin-top: 60px;
+}
+.icon2:hover{
+    transform: scale(1.2);
+}
+.icon3{
+    width: 70px;
+    height: 70px;
+    background: url(../image/icon-04.png) no-repeat center;
+    background-size: contain;
+    margin: 60px 0px;
+}
+.icon3:hover{
+    transform: scale(1.1);
+}
+.icon4{
+    width: 70px;
+    height: 70px;
+    background: url(../image/icon-05.png) no-repeat center;
+    background-size: contain;
+    margin-bottom: 60px;
+}
+.icon4:hover{
+    transform: scale(1.2);
+}
+.icon5{
+    width: 70px;
+    height: 70px;
+    background: url(../image/icon-06.png) no-repeat center;
+    background-size: contain;
+}
+.icon5:hover{
+    transform: scale(1.2);
+}
+.box-h1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    align-items: flex-end;
+}
+.h1{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 62pt;
+    font-weight: 400;
+    color: #EDE0D4;
+    stroke: #EDE0D4;
+    stroke-width: 0.5pt;
+    animation: fadeInLeftBig 1s linear forwards;
+}
+.box-h2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.box-button{
+    width: auto;
+    height: auto;
+    background-color: #E6CCB2;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+.box-button:hover{
+    transform: scale(1.05);
+}
+.h2{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 67pt;
+    font-weight: 500;
+    color: #E6CCB2;
+    stroke: #E6CCB2;
+    stroke-width: 2px;
+    text-align: right;
+    animation: bounceInRight 2.5s ease-in forwards;
+}
+.h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 27pt;
+    font-weight: 400;
+    color: #EDE0D4;
+    stroke: #EDE0D4;
+    stroke-width: 0.25pt;
+    text-align: right;
+    animation: fadeInDown 3.5s ease-in forwards;
+}
